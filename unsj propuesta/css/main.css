@@ -1,0 +1,29 @@
+/*Arida Medium*/
+@font-face {
+    font-family: "Arida-Medium";
+    src: url("../fonts/Arida/Arida-Medium.otf");
+}
+/*Arida Regular*/
+@font-face {
+    font-family: "Arida-Regular";
+    src: url("../fonts/Arida/Arida-Regular.otf");
+}
+/*Arida Regular Italic*/
+@font-face {
+    font-family: "Arida-RegularIt";
+    src: url("../fonts/Arida/Arida-RegularIt.otf");
+}
+/*Arida Bold*/
+@font-face {
+    font-family: "Arida-Bold";
+    src: url("../fonts/Arida/Arida-Bold.otf");
+}
+/*Arida Black*/
+@font-face {
+    font-family: "Arida-Black";
+    src: url("../fonts/Arida/Arida-Black.otf");
+}
+
+h1,h2,h3,h4,h5,h6{
+    
+}
