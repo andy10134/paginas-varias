@@ -1,13 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" type="image/svg+xml" href="img/unsjlogosimp.svg">
+    <!--Slider-->
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Campus Virtual UNSJ</title>
 </head>
+
 <body>
-    <h1>CampusVirtual</h1>
-    <h1><span class="title-regular">Campus</span><span class="title-bold">Virtual</span></h1>
+    <!--Navbar-->
+    <nav>
+        <div class="unsj-logo container-fluid">
+            <h1><span class="title-regular">Campus</span><span class="title-bold">Virtual</span> | <span
+                    class="title-regular">UNSJ</span></h1>
+        </div>
+        <img src="img/line_colored.png" class="line-colored" alt="line_colored">
+    </nav>
+    <!--End Navbar-->
+    <!--Slider-->
+    <section id="hero">
+        <div class="slider-container">
+            <div class="slider-control left inactive"></div>
+            <div class="slider-control right"></div>
+            <ul class="slider-pagi"></ul>
+            <div class="slider">
+                <div class="slide slide-0 active">
+                    <div class="slide__bg"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                        </svg>
+                        <div class="slide__text">
+                            <h2 class="slide__text-heading"> <span class="title-regular">SIED</span> </h2>
+                            <p class="slide__text-desc">
+                                El Sistema Institucional de Educación a Distancia (SIED) es un conjunto de recursos
+                                tecnológicos y pedagógicos que, combinados, van a permitir la implementación desde un
+                                curso hasta carreras completas de grado y de posgrado de la UNSJ en la modalidad de
+                                educación a distancia.</p>
+                            <a href="https://campusvirtual.unsj.edu.ar/login/" class="slide__text-link">Acceder</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-1 ">
+                    <div class="slide__bg"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                        </svg>
+                        <div class="slide__text">
+                            <h2 class="slide__text-heading"><span class="title-fcefyn">fcefyn</span></h2>
+                            <p class="slide__text-desc">Uno de los aportes científicos tecnológicos que pone la
+                                Universidad Nacional de San Juan a disposición de la Secretaría de Estado de Ciencia,
+                                Tecnología e Innovación de la Provincia en medio de la emergencia sanitaria actual, es
+                                del Instituto de Informática (IDEI) de la Facultad de Ciencias Exactas, Físicas y
+                                Naturales.</p>
+                            <a href="http://www.unsj.edu.ar/home/noticias_detalles/4913/2" class="slide__text-link">Mas información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-2">
+                    <div class="slide__bg"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                        </svg>
+                        <div class="slide__text">
+                            <h2 class="slide__text-heading"><span class="title-regular">facso</span></h2>
+                            <p class="slide__text-desc">Departamento de Comunicacion de la Facultad de Ciencias Sociales de la UNSJ</p>
+                            <a href="http://hkmbhutto.wix.com/abdulrasheed" class="slide__text-link">Mas información</a>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="slide slide-3">
+                    <div class="slide__bg"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                        </svg>
+                        <div class="slide__text">
+                            <h2 class="slide__text-heading">Project name 4</h2>
+                            <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore
+                                quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus
+                                illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
+                            <a href="http://hkmbhutto.wix.com/abdulrasheed" class="slide__text-link">Project link</a>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+    <!--End Slider-->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/slider.js"></script>
 </body>
+
 </html>
