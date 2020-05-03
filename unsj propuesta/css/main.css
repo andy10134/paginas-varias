@@ -24,6 +24,17 @@
     src: url("../fonts/Arida/Arida-Black.otf");
 }
 
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 h1,h2,h3,h4,h5,h6{
-    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.title-regular{
+    font-family: "Arida-Regular";
+}
+.title-bold{
+    font-family: "Arida-Bold";
 }
