@@ -133,21 +133,54 @@ nav{
 
 #quienes-somos{
     width: 100%;
-    height: 100vh;
-}
-
-#quienes-somos{
+    height: 50vh;
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/giphy.gif");
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/giphy.gif");
+overflow: hidden;
 }
-#quienes-somos h1{
-    font-size: 70px;
-    text-align: center;
+
+#quienes-somos .content{
+  /*  background: rgb(59,83,117);
+    background: linear-gradient(130deg, rgba(59,83,117,0.7984593495601365) 50%, rgba(0,0,0,0.17100836916797968) 50%); 
+    */height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: relative;
+}
+
+.overlay{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    top: 0px;
+    left: 0px;
+}
+
+.overlay {
+    fill: #3b5375;
+    opacity: 0.8;
+    transform: rotateX(180deg);
+}
+
+
+#noticias{
+    
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/giphy.gif");
+    overflow: hidden;
+    height: 50vh;
+
+}
+
+#noticias .content{
+    background-color:rgba(0,0,0,0.7984593495601365);
+    background: rgb(59,83,117);
+    background: linear-gradient(40deg, rgba(59,83,117,0.7984593495601365) 50%, rgba(0,0,0,0.17100836916797968) 50%); 
+    height: 100%;
+    width: 100%;
 }
