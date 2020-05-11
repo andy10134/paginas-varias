@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.5.0.min.js"></script>
+    <script src="jquery.diamonds.js"></script>
+    <link rel="stylesheet" href="diamonds.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="diamon-grid">
+        <div class="item">            <img src="../unsj propuesta/img/unsjlogosimp.svg" alt="">
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <script>
+        $(".diamon-grid").diamonds({
+            size : 220, // Size of diamonds in pixels. Both width and height.
+            gap : 0, // Pixels between each square.
+            hideIncompleteRow : false, // Hide last row if there are not enough items to fill it completely.
+            autoRedraw : true, // Auto redraw diamonds when it detects resizing.
+            itemSelector : ".item" // the css selector to use to select diamonds-items.
+        });
+    </script>
+</body>
+</html>
