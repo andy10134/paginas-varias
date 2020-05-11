@@ -29,7 +29,7 @@
     src: url("../fonts/URWForm/URWForm-Regular.otf");
 }
 body{
-    background-color: #ebebca;
+    background-color:rgb(59,83,117);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     color: black;
@@ -59,12 +59,13 @@ h1,h2,h3,h4,h5,h6{
     top: 90px;
     left: 0;
     width: 100%;
-    min-height: 4px;
+    min-height: 10px;
     z-index: 4;
 }
-a{
+
+/*a{
     border-bottom: 2px solid #fff;
-}
+}*/
 
 /*navbar*/
 nav{
@@ -73,11 +74,24 @@ nav{
     background-color: #fff;
     display: flex;
     align-items: center;
-    position: fixed;
+    position: fixed !important;
     top: 0px;
     z-index: 5;
     width: 100%;
 }
+
+.nav-icon{
+    height:30px;
+}
+.nav-text{
+    height: 30px;
+}
+
+.burger{
+    display: none;
+    height:40px;
+}
+
 
 .nav-list{
     width: 100%;
@@ -89,7 +103,7 @@ nav{
 }
 
 .nav-item{
-    padding-left: 5px;
+    display: block !important;
 }
 
 .nav-list li{
@@ -101,16 +115,27 @@ nav{
 }
 
 .unsj-logo{
-    display: flex;
     font-size: 30px;
-    align-items: center;
-    justify-content: start;
 }
 
+.navbar-collapse{
+    text-align: center;
+    background-color: rgba(255,255,255,0.7);
+
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar-collapse a{
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+/*end navbar*/
 /*Hero*/
 
 #hero{
-    margin-top: 97px;
+    margin-top: 100px;
     height: calc(100vh - 97px);
     overflow: hidden;
 }
@@ -134,7 +159,7 @@ nav{
     background: #ffcd3e;
 }
 
-#quienes-somos{
+#login{
     width: 100%;
     height: 50vh;
     background-position: center;
@@ -142,10 +167,10 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/giphy.gif");
-overflow: hidden;
+    overflow: hidden;
 }
 
-#quienes-somos .content{
+#login .content{
     background: rgb(59,83,117);
     background: linear-gradient(130deg, rgba(59,83,117,0.7984593495601365) 50%, rgba(255,255,255,0.3) 50%); 
     height: 100%;
@@ -169,7 +194,7 @@ overflow: hidden;
 }
 
 
-#noticias{
+#signin{
     
     background-position: center;
     background-attachment: fixed;
@@ -183,7 +208,7 @@ overflow: hidden;
 
 }
 
-#noticias .content{
+#signin .content{
    /* background: linear-gradient(-50deg, rgba(59,83,117,0.7984593495601365) 50%, rgba(0,0,0,0) 50%);*/
     background: linear-gradient(-50deg, rgba(59,83,117,0.7984593495601365) 50%, rgba(255,255,255,0.3) 50%);
     height: 100%;
@@ -210,3 +235,121 @@ transform: translateY(-50%);
     margin-right: 100px;
     margin-top: 3%;   
 }
+
+
+/*MEDIAS*/
+
+@media (max-width: 768px) {
+    .colapsed{
+        display: none;
+    }
+    .unsj-logo{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        font-size: 30px;
+    }
+    #hero{
+        margin-top: 100px;
+    }
+    .burger{
+        display: none;
+    }
+
+    .unsj-logo h1{
+        display: flex;
+        align-items: center;
+    }
+    .overlay{
+        display: none;
+    }
+
+  }
+
+  @media (max-width: 576px) {
+    .burger{
+        display: inline;
+    }
+
+    /*Slider*/
+    .title-slider h2 {
+        margin-top: -20px;
+        margin-left: 50px;
+    }
+    .slide__text-heading {
+        line-height: 20rem;
+        font-size: 3.5rem;
+        margin-top: -20px;
+        margin-left: 10px;
+    }
+    .slide__text {
+        height: 30%;
+    }
+    /*end slider*/
+    /*Campus*/
+    #signin{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/giphy.gif");
+    }
+    #login .content, #signin .content{
+        background:rgba(59,83,117,0.7984593495601365); 
+    }
+    #signin .content{
+        background-color: rgb(59,83,117);
+    }
+
+    #login .slide__text-heading {
+    margin-top: -20px;
+    margin-left: 10px;
+    margin-top: -40px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    #login .text {
+    bottom: 0% !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+
+    }
+
+    #login .slide__text-heading{
+        margin-top: -64px;
+    }
+
+    #login .slide__text-link {
+        display: inherit;
+    }
+
+    #login .slide__text-desc {
+        display: inherit;
+    }
+
+    #login .text > h2:nth-child(1) {
+        margin-bottom: -64px;
+        }
+    #login .text > p:nth-child(2) {
+        margin-top: 15px;
+        }
+    #login .text > a:nth-child(3) {
+            text-align: center;
+            }
+
+    #login .text {
+        bottom: 37px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        width: 85%;
+        }
+        #login .text {
+            bottom: 100% !important;
+            height: 20px;
+            }
+            #login .slide__text-heading {
+            margin-top: 0px;
+            }
+            
+    .content .text{
+        left: 8%;
+    }
+    }
+    

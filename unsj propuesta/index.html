@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="icon" type="image/svg+xml" href="img/unsjlogosimp.svg">
     <!--Slider-->
     <link rel="stylesheet" href="css/slider.css">
@@ -16,27 +15,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Campus Virtual UNSJ</title>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/nav.js"></script>
 </head>
 
 <body>
+
     <!--Navbar-->
-    <nav>
-        <div class="unsj-logo container-fluid d-flex align-items-center">
+    <nav class="container-fluid navbar">
+        <div class="unsj-logo col-10 col-sm-12 col-md-10 d-sm-flex justify-content-sm-center justify-content-start">
             <h1><span class="title-regular">Campus</span><span class="title-bold">Virtual</span> | <span
                     class="title-regular">UNSJ</span></h1>
         </div>
-        <div class="container-fluid d-flex align-items-center">
-            <ul class="nav-list">
-                <li class="nav-icons"><img src="img/interfaz.svg" height="30px" alt=""><span class="nav-item"><a
-                            style="color: black; text-decoration: none;" href="">Novedades</a></span></li>
-                <li class="nav-icons"><img src="img/education.svg" height="30px" alt=""><span class="nav-item"><a
-                            style="color: black; text-decoration: none;" href="">Instituciones</a></span></li>
-                <li class="nav-icons"><img src="img/apoyo.svg" height="30px" alt=""><span class="nav-item"><a
-                            style="color: black; text-decoration: none;" href="">Ayuda</a></span></li>
-            </ul>
-        </div>
+
+        <img src="img/burger_line_list_menu_nav_navigation_option_icon_123231.svg" class="burger col-2 navbar-toggler"
+            type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" alt="">
+
+
+
         <img src="img/line_colored.png" class="line-colored" alt="line_colored">
     </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><img src="img/news.svg" class="nav-icon" alt=""><span class="nav-text">  Novedades</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><img src="img/apoyo.svg" class="nav-icon" alt=""><span class="nav-text">  Ayuda</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><img src="img/education.svg" class="nav-icon" alt=""><span class="nav-text">  Institucional</span></a>
+            </li>
+        </ul>
+    </div>
+
     <!--End Navbar-->
     <!--Slider-->
     <section id="hero">
@@ -52,12 +68,13 @@
                             <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
                         </svg>
                         <div class="slide__text">
-                            <div class="title-slider">
-                                <img src="icon.svg" height="90px" alt="">
-                                <h2 class="slide__text-heading"> <span class="title-regular">SIED</span> </h2>
+                            <div class="title-slider unsj">
+                                <h2 class="slide__text-heading">                                <img src="icon.svg" height="90px" alt="">
+                                    <span class="title-regular">SIED</span> </h2>
                             </div>
                             <p class="slide__text-desc">
-                                El Consejo Superior aprobó un sistema para que todas las propuestas académicas puedan realizarse a distancia. Debe acreditarlo la CONEAU.
+                                El Consejo Superior aprobó un sistema para que todas las propuestas académicas puedan
+                                realizarse a distancia. Debe acreditarlo la CONEAU.
                             </p>
                             <a href="https://campusvirtual.unsj.edu.ar/login/" class="slide__text-link">Acceder ></a>
                         </div>
@@ -123,49 +140,41 @@
         </div>
     </section>
     <!--End Slider-->
-    <section id="quienes-somos">
+    <section id="login">
         <div class="content">
             <svg class="overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
                 <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
             </svg>
             <div class="text" style="opacity: 1;bottom: -25%;">
                 <h2 class="slide__text-heading"><span class="title-regular" style="color: #fff;">
-                    <span class="title-regular">Campus</span><span class="title-bold">Virtual</span> | <span class="title-regular">UNSJ</span>
+                        <span class="title-regular">Campus</span><span class="title-bold">Virtual</span> | <span
+                            class="title-regular">UNSJ</span>
                 </h2>
                 <p class="slide__text-desc">Ingreso al Sistema de educacion a Distancia de la UNSJ </p>
                 <a href="http://hkmbhutto.wix.com/abdulrasheed" class="slide__text-link">Iniciar Sesion</a>
             </div>
         </div>
     </section>
-
-    <section id="noticias">
+    <section id="signin">
         <div class="content">
             <div class="text-bottom" style="opacity: 1;">
                 <h2 class="slide__text-heading"><span class="title-regular" style="color: #fff;">
-                    <span class="title-regular">Todavia no sos usuario del Campus? </span>
+                        <span class="title-regular">Todavia no sos usuario del Campus? </span>
                 </h2>
-                <p class="slide__text-desc">Tramita el registro acá</p>
-                <a href="http://hkmbhutto.wix.com/abdulrasheed" class="slide__text-link">Registrarse</a>
+                <a href="http://hkmbhutto.wix.com/abdulrasheed" class="slide__text-link">Tramita el registro acá</a>
             </div>
         </div>
     </section>
+    <!--<footer id="footer">
+        <img src="img/21-02-2019_12-02-04_Manual-Identidad-UNSJ-copia(2).svg" alt="">
+    </footer>-->
 
-    <script src="js/jquery-3.5.0.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/nav.js"></script>
-    Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a
+    <!--Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a
         href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
     Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a
         href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
     Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a
-        href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+        href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>-->
 </body>
 
 </html>
