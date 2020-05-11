@@ -1,316 +1,320 @@
 /*Arida Medium*/
 @font-face {
     font-family: "Arida-Medium";
-    src: url("../fonts/Arida/Arida-Medium.otf");
+    src        : url("../fonts/Arida/Arida-Medium.otf");
 }
+
 /*Arida Regular*/
 @font-face {
     font-family: "Arida-Regular";
-    src: url("../fonts/Arida/Arida-Regular.otf");
+    src        : url("../fonts/Arida/Arida-Regular.otf");
 }
+
 /*Arida Regular Italic*/
 @font-face {
     font-family: "Arida-RegularIt";
-    src: url("../fonts/Arida/Arida-RegularIt.otf");
+    src        : url("../fonts/Arida/Arida-RegularIt.otf");
 }
+
 /*Arida Bold*/
 @font-face {
     font-family: "Arida-Bold";
-    src: url("../fonts/Arida/Arida-Bold.otf");
+    src        : url("../fonts/Arida/Arida-Bold.otf");
 }
+
 /*Arida Black*/
 @font-face {
     font-family: "Arida-Black";
-    src: url("../fonts/Arida/Arida-Black.otf");
+    src        : url("../fonts/Arida/Arida-Black.otf");
 }
+
 /*URWForm*/
 @font-face {
     font-family: "URWForm-Regular";
-    src: url("../fonts/URWForm/URWForm-Regular.otf");
+    src        : url("../fonts/URWForm/URWForm-Regular.otf");
 }
-body{
-    background-color:rgb(59,83,117);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    color: black;
-    padding: 0px;
-    margin: 0px;
+
+body {
+    background-color: rgb(59, 83, 117);
+    font-family     : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size       : 20px;
+    color           : black;
+    padding         : 0px;
+    margin          : 0px;
 
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.title-regular{
+.title-regular {
     font-family: "Arida-Regular";
 }
-.title-bold{
+
+.title-bold {
     font-family: "Arida-Bold";
 }
 
 /*fcefyn*/
-.title-fcefyn{
+.title-fcefyn {
     font-family: "URWForm-Regular";
 }
 
 .line-colored {
-    position: absolute;
-    top: 90px;
-    left: 0;
-    width: 100%;
+    position  : absolute;
+    top       : 90px;
+    left      : 0;
+    width     : 100%;
     min-height: 10px;
-    z-index: 4;
+    z-index   : 4;
 }
-
-/*a{
-    border-bottom: 2px solid #fff;
-}*/
 
 /*navbar*/
-nav{
-    margin: 0PX;
-    height: 90px;
+nav {
+    margin          : 0PX;
+    height          : 90px;
     background-color: #fff;
-    display: flex;
-    align-items: center;
-    position: fixed !important;
-    top: 0px;
-    z-index: 5;
-    width: 100%;
+    display         : flex;
+    align-items     : center;
+    position        : fixed !important;
+    top             : 0px;
+    z-index         : 5;
+    width           : 100%;
 }
 
-.nav-icon{
-    height:30px;
-}
-.nav-text{
+.nav-icon {
     height: 30px;
 }
 
-.burger{
+.nav-text {
+    height: 30px;
+}
+
+.burger {
     display: none;
-    height:40px;
+    height : 40px;
 }
 
 
-.nav-list{
-    width: 100%;
-    margin-left: 0px;
-    display: flex;
-    align-content: center;
+.nav-list {
+    width          : 100%;
+    margin-left    : 0px;
+    display        : flex;
+    align-content  : center;
     justify-content: end;
-    list-style: none;
+    list-style     : none;
 }
 
-.nav-item{
+.nav-item {
     display: block !important;
 }
 
-.nav-list li{
-    display: flex;
+.nav-list li {
+    display        : flex;
     justify-content: center;
-    align-items: center;
-    padding: 5px;
-    font-size: 20px;
+    align-items    : center;
+    padding        : 5px;
+    font-size      : 20px;
 }
 
-.unsj-logo{
+.unsj-logo {
     font-size: 30px;
 }
 
-.navbar-collapse{
-    text-align: center;
-    background-color: rgba(255,255,255,0.8);
-    z-index: 4;
-    position: fixed;
-    width: 100%;
+.navbar-collapse {
+    text-align      : center;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index         : 4;
+    position        : fixed;
+    width           : 100%;
 }
 
-.navbar-collapse a{
+.navbar-collapse a {
     border: none;
-    color: rgba(0, 0, 0, 0.8);
+    color : rgba(0, 0, 0, 0.8);
 }
+
 /*end navbar*/
 /*Hero*/
 
-#hero{
+#hero {
     margin-top: 100px;
-    height: calc(100vh - 97px);
-    overflow: hidden;
+    height    : calc(100vh - 97px);
+    overflow  : hidden;
 }
 
-/*sectiones*/
-#instituciones{
-    width: 100%;
-    background-color: #3b5375;
-}
-
-#instituciones h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 70px;
-}
-
-.faud:hover{
-    transition: all 1s 0s ease;
-    background: #ffcd3e;
-}
-
-#login{
-    width: 100%;
-    height: 50vh;
-    background-position: center;
+/*sections*/
+#login {
+    width                : 100%;
+    height               : 50vh;
+    background-position  : center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/giphy.gif");
-    overflow: hidden;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+    background-image     : linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/giphy.gif");
+    overflow             : hidden;
 }
 
-#login .content{
-    background: rgb(59,83,117);
-    background: linear-gradient(130deg, rgba(59,83,117,0.7984593495601365) 50%, rgba(255,255,255,0.3) 50%); 
-    height: 100%;
-    width: 100%;
-    top: 0px;
-    left: 0px;
+#login .content {
+    background           : rgb(59, 83, 117);
+    background           : linear-gradient(130deg, rgba(59, 83, 117, 0.7984593495601365) 50%, rgba(255, 255, 255, 0.3) 50%);
+    height               : 100%;
+    width                : 100%;
+    top                  : 0px;
+    left                 : 0px;
     background-attachment: fixed;
-    position: relative;
-}
-
-.overlay{
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    position             : relative;
 }
 
 .overlay {
-    fill: #3b5375;
-    opacity: 0.8;
+    position: absolute;
+    top     : 0px;
+    left    : 0px;
+}
+
+.overlay {
+    fill     : #3b5375;
+    opacity  : 0.8;
     transform: rotateX(180deg);
 }
 
 
-#signin{
-    
-    background-position: center;
+#signin {
+
+    background-position  : center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*background-image: linear-gradient(-50deg, rgba(59,83,117,0.7984593495601365) 50%, rgba(0,0,0,0) 50%), url("../img/giphy.gif");
-    /*background-image: linear-gradient(-50deg, rgba(59,83,117,0.7984593495601365) 50%, rgba(136, 136, 136, 0.46) 50%), url("../img/giphy.gif");*/
-    background-image: linear-gradient(-50deg, rgba(59,83,117,0.7984593495601365) 47%, rgba(0,0,0,0.5) 47%), url("../img/giphy.gif");
-    overflow: hidden;
-    height: 50vh;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+    /*background-image   : linear-gradient(-50deg, rgba(59,83,117,0.7984593495601365) 50%, rgba(0,0,0,0) 50%), url("../img/giphy.gif");
+    /*background-image   : linear-gradient(-50deg, rgba(59,83,117,0.7984593495601365) 50%, rgba(136, 136, 136, 0.46) 50%), url("../img/giphy.gif");*/
+    background-image     : linear-gradient(-50deg, rgba(59, 83, 117, 0.7984593495601365) 47%, rgba(0, 0, 0, 0.5) 47%), url("../img/giphy.gif");
+    overflow             : hidden;
+    height               : 50vh;
 
 }
 
-#signin .content{
-   /* background: linear-gradient(-50deg, rgba(59,83,117,0.7984593495601365) 50%, rgba(0,0,0,0) 50%);*/
-    background: linear-gradient(-50deg, rgba(59,83,117,0.7984593495601365) 50%, rgba(255,255,255,0.3) 50%);
-    height: 100%;
-    width: 100%;
-    height: 100%;
-    width: 100%;
+#signin .content {
+    /* background: linear-gradient(-50deg, rgba(59,83,117,0.7984593495601365) 50%, rgba(0,0,0,0) 50%);*/
+    background: linear-gradient(-50deg, rgba(59, 83, 117, 0.7984593495601365) 50%, rgba(255, 255, 255, 0.3) 50%);
+    height    : 100%;
+    width     : 100%;
+    height    : 100%;
+    width     : 100%;
 }
 
-.content .text{
-    position: absolute;
-width: 25%;
-left: 12%;
-color: #fff;
-transition: transform 0.5s 0.8s, opacity 0.5s 0.8s, -webkit-transform 0.5s 0.8s;
-will-change: transform, opacity;
--webkit-transform: translateY(-50%);
-transform: translateY(-50%);
+.content .text {
+    position         : absolute;
+    width            : 25%;
+    left             : 12%;
+    color            : #fff;
+    transition       : transform 0.5s 0.8s, opacity 0.5s 0.8s, -webkit-transform 0.5s 0.8s;
+    will-change      : transform, opacity;
+    -webkit-transform: translateY(-50%);
+    transform        : translateY(-50%);
 }
 
-.text-bottom{
-    color: #fff;
-    width: 25%;
-    float: right;
+.text-bottom {
+    color       : #fff;
+    width       : 25%;
+    float       : right;
     margin-right: 100px;
-    margin-top: 3%;   
+    margin-top  : 3%;
 }
 
 
 /*MEDIAS*/
 
 @media (max-width: 768px) {
-    .colapsed{
+    .colapsed {
         display: none;
     }
-    .unsj-logo{
-        display: flex;
+
+    .unsj-logo {
+        display        : flex;
         justify-content: center;
-        align-items: stretch;
-        font-size: 30px;
+        align-items    : stretch;
+        font-size      : 30px;
     }
-    #hero{
+
+    #hero {
         margin-top: 100px;
     }
-    .burger{
+
+    .burger {
         display: none;
     }
 
-    .unsj-logo h1{
-        display: flex;
+    .unsj-logo h1 {
+        display    : flex;
         align-items: center;
     }
-    .overlay{
+
+    .overlay {
         display: none;
     }
 
-  }
+}
 
-  @media (max-width: 576px) {
-    .burger{
+@media (max-width: 576px) {
+    .burger {
         display: inline;
     }
 
     /*Slider*/
     .title-slider h2 {
-        margin-top: -20px;
+        margin-top : -20px;
         margin-left: 50px;
     }
+
     .slide__text-heading {
         line-height: 20rem;
-        font-size: 3.5rem;
-        margin-top: -20px;
+        font-size  : 3.5rem;
+        margin-top : -20px;
         margin-left: 10px;
     }
+
     .slide__text {
         height: 30%;
     }
+
     /*end slider*/
     /*Campus*/
-    #signin{
+    #signin {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/giphy.gif");
     }
-    #login .content, #signin .content{
-        background: rgba(0,0,0,0.00005) ;    }
-    #signin .content{
-        background-color: rgb(59,83,117);
+
+    #login .content,
+    #signin .content {
+        background: rgba(0, 0, 0, 0.00005);
+    }
+
+    #signin .content {
+        background-color: rgb(59, 83, 117);
     }
 
     #login .slide__text-heading {
-    margin-top: -20px;
-    margin-left: 10px;
-    margin-top: -40px;
-    margin-left: auto;
-    margin-right: auto;
+        margin-top  : -20px;
+        margin-left : 10px;
+        margin-top  : -40px;
+        margin-left : auto;
+        margin-right: auto;
     }
+
     #login .text {
-    bottom: 0% !important;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
+        bottom      : 0% !important;
+        margin-left : auto;
+        margin-right: auto;
+        width       : auto;
 
     }
 
-    #login .slide__text-heading{
+    #login .slide__text-heading {
         margin-top: -64px;
     }
 
@@ -322,32 +326,65 @@ transform: translateY(-50%);
         display: inherit;
     }
 
-    #login .text > h2:nth-child(1) {
+    #login .text>h2:nth-child(1) {
         margin-bottom: -64px;
-        }
-    #login .text > p:nth-child(2) {
+    }
+
+    #login .text>p:nth-child(2) {
         margin-top: 15px;
-        }
-    #login .text > a:nth-child(3) {
-            text-align: center;
-            }
+    }
+
+    #login .text>a:nth-child(3) {
+        text-align: center;
+    }
 
     #login .text {
-        bottom: 37px;
+        bottom       : 37px;
         margin-bottom: 0px;
+        margin-top   : 0px;
+        width        : 85%;
+    }
+
+    #login .text {
+        bottom: 100% !important;
+        height: 20px;
+    }
+
+    #login .slide__text-heading {
         margin-top: 0px;
-        width: 85%;
+    }
+    #login {
+        height: 38vh;
         }
-        #login .text {
-            bottom: 100% !important;
-            height: 20px;
-            }
-            #login .slide__text-heading {
-            margin-top: 0px;
-            }
-            
-    .content .text{
+    .content .text {
         left: 8%;
     }
+    #signin .slide__text-heading{
+        line-height: 4rem;
     }
-    
+    .text-bottom{
+        float: none;
+        width: 100%;
+    }
+
+    #signin a .slide__text-link:nth-child(2) {
+        text-align: center;
+        position: relative;
+        width: 85%;
+        margin-left: 8%;
+        }
+
+        #signin > div:nth-child(1) {
+            background: rgb(59,83,117);
+            background: linear-gradient(345deg, rgba(59,83,117,1) 35%, rgba(0,0,0,0) 35%);
+            }
+             #signin .slide__text-link {
+                display:inherit ;
+                }
+                .text-bottom > h2:nth-child(1) {
+                    text-align: center;
+                    }
+                    .text-bottom {
+                        margin-top: 14%;
+                        }
+}
