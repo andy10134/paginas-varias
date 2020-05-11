@@ -7,6 +7,8 @@
     <!--Bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="icon" type="image/svg+xml" href="img/unsjlogosimp.svg">
+    <!--Hamburger-->
+    <link rel="stylesheet" href="css/hamburger.css">
     <!--Slider-->
     <link rel="stylesheet" href="css/slider.css">
     <!--Cards-->
@@ -26,29 +28,37 @@
 
     <!--Navbar-->
     <nav class="container-fluid navbar">
-        <div class="unsj-logo col-10 col-sm-12 col-md-10 d-sm-flex justify-content-sm-center justify-content-start">
+        <div class="unsj-logo col-9 col-sm-12 col-md-10 d-sm-flex justify-content-sm-center justify-content-start">
             <h1><span class="title-regular">Campus</span><span class="title-bold">Virtual</span> | <span
                     class="title-regular">UNSJ</span></h1>
         </div>
 
-        <img src="img/burger_line_list_menu_nav_navigation_option_icon_123231.svg" class="burger col-2 navbar-toggler"
+        <!--<img src="img/burger_line_list_menu_nav_navigation_option_icon_123231.svg" class="burger col-2 navbar-toggler"
             type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" alt="">
-
-
+        -->
+        <button data-target="#navbarSupportedContent" style="margin-top: 8px;" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation" alt="" data-toggle="collapse" class="col-3 hamburger hamburger--spring collapsed">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
 
         <img src="img/line_colored.png" class="line-colored" alt="line_colored">
     </nav>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#"><img src="img/news.svg" class="nav-icon" alt=""><span class="nav-text">  Novedades</span></a>
+                <a class="nav-link" href="#"><img src="img/news.svg" class="nav-icon" alt=""><span class="nav-text">
+                        Novedades</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#"><img src="img/apoyo.svg" class="nav-icon" alt=""><span class="nav-text">  Ayuda</span></a>
+                <a class="nav-link" href="#"><img src="img/apoyo.svg" class="nav-icon" alt=""><span class="nav-text">
+                        Ayuda</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#"><img src="img/education.svg" class="nav-icon" alt=""><span class="nav-text">  Institucional</span></a>
+                <a class="nav-link" href="#"><img src="img/education.svg" class="nav-icon" alt=""><span
+                        class="nav-text"> Institucional</span></a>
             </li>
         </ul>
     </div>
@@ -69,7 +79,7 @@
                         </svg>
                         <div class="slide__text">
                             <div class="title-slider unsj">
-                                <h2 class="slide__text-heading">                                <img src="icon.svg" height="90px" alt="">
+                                <h2 class="slide__text-heading"> <img src="icon.svg" height="90px" alt="">
                                     <span class="title-regular">SIED</span> </h2>
                             </div>
                             <p class="slide__text-desc">
@@ -175,6 +185,13 @@
         href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
     Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a
         href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>-->
+    <button class="hamburger hamburger--spring" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+
 </body>
 
 </html>

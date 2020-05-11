@@ -120,11 +120,10 @@ nav{
 
 .navbar-collapse{
     text-align: center;
-    background-color: rgba(255,255,255,0.7);
-
+    background-color: rgba(255,255,255,0.8);
+    z-index: 4;
     position: fixed;
     width: 100%;
-    z-index: 2;
 }
 
 .navbar-collapse a{
@@ -291,8 +290,7 @@ transform: translateY(-50%);
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/giphy.gif");
     }
     #login .content, #signin .content{
-        background:rgba(59,83,117,0.7984593495601365); 
-    }
+        background: rgba(0,0,0,0.5) ;    }
     #signin .content{
         background-color: rgb(59,83,117);
     }
