@@ -290,7 +290,7 @@ transform: translateY(-50%);
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/giphy.gif");
     }
     #login .content, #signin .content{
-        background: rgba(0,0,0,0.5) ;    }
+        background: rgba(0,0,0,0.1) ;    }
     #signin .content{
         background-color: rgb(59,83,117);
     }
