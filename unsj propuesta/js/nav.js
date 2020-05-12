@@ -1,9 +1,13 @@
 $(document).ready(() => {
 
-    $(".nav-item").hide();
+    $(".hamburger").click(function (e) { 
+        if ($(this).hasClass("is-active")) {
 
-   $(".nav-icons").hover(function () { 
-    $(this).children(".nav-item").toggle("slow");
-   });
-
+            $(this).removeClass('is-active');
+        } else{
+            $(this).addClass('is-active');
+        }
+        
+    });
+    
 });

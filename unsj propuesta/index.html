@@ -5,39 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="icon" type="image/svg+xml" href="img/unsjlogosimp.svg">
+    <!--Hamburger-->
+    <link rel="stylesheet" href="css/hamburger.css">
     <!--Slider-->
     <link rel="stylesheet" href="css/slider.css">
     <!--Cards-->
     <link rel="stylesheet" href="css/cards.css">
     <!--icons-->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Campus Virtual UNSJ</title>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/nav.js"></script>
 </head>
 
 <body>
+
     <!--Navbar-->
-    <nav>
-        <div class="unsj-logo container-fluid d-flex align-items-center">
+    <nav class="container-fluid navbar">
+        <div class="unsj-logo col-9 col-sm-12 col-md-10 d-sm-flex justify-content-sm-center justify-content-start">
             <h1><span class="title-regular">Campus</span><span class="title-bold">Virtual</span> | <span
                     class="title-regular">UNSJ</span></h1>
         </div>
-        <div class="container-fluid d-flex align-items-center">
-            <ul class="nav-list">
-                <li class="nav-icons"><img src="img/interfaz.svg" height="30px" alt=""><span class="nav-item"><a
-                            style="color: black; text-decoration: none;" href="">Novedades</a></span></li>
-                <li class="nav-icons"><img src="img/education.svg" height="30px" alt=""><span class="nav-item"><a
-                            style="color: black; text-decoration: none;" href="">Instituciones</a></span></li>
-                <li class="nav-icons"><img src="img/apoyo.svg" height="30px" alt=""><span class="nav-item"><a
-                            style="color: black; text-decoration: none;" href="">Ayuda</a></span></li>
-            </ul>
-        </div>
+
+        <!--<img src="img/burger_line_list_menu_nav_navigation_option_icon_123231.svg" class="burger col-2 navbar-toggler"
+            type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" alt="">
+        -->
+        <button data-target="#navbarSupportedContent" style="margin-top: 8px; outline: none;"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" alt=""
+            data-toggle="collapse" class="col-3 hamburger hamburger--spring collapsed">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
         <img src="img/line_colored.png" class="line-colored" alt="line_colored">
     </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><img src="img/news.svg" class="nav-icon" alt=""><span class="nav-text">
+                        Novedades</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><img src="img/apoyo.svg" class="nav-icon" alt=""><span class="nav-text">
+                        Ayuda</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><img src="img/education.svg" class="nav-icon" alt=""><span
+                        class="nav-text"> Institucional</span></a>
+            </li>
+        </ul>
+    </div>
+
     <!--End Navbar-->
     <!--Slider-->
     <section id="hero">
@@ -53,15 +79,14 @@
                             <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
                         </svg>
                         <div class="slide__text">
-                            <div class="title-slider">
-                                <img src="icon.svg" height="90px" alt="">
-                                <h2 class="slide__text-heading"> <span class="title-regular">SIED</span> </h2>
+                            <div class="title-slider unsj">
+                                <h2 class="slide__text-heading"> <img src="icon.svg" height="90px" alt="">
+                                    <span class="title-regular">SIED</span> </h2>
                             </div>
                             <p class="slide__text-desc">
-                                El Sistema Institucional de Educación a Distancia (SIED) es un conjunto de recursos
-                                tecnológicos y pedagógicos que, combinados, van a permitir la implementación desde un
-                                curso hasta carreras completas de grado y de posgrado de la UNSJ en la modalidad de
-                                educación a distancia.</p>
+                                El Consejo Superior aprobó un sistema para que todas las propuestas académicas puedan
+                                realizarse a distancia. Debe acreditarlo la CONEAU.
+                            </p>
                             <a href="https://campusvirtual.unsj.edu.ar/login/" class="slide__text-link">Acceder ></a>
                         </div>
                     </div>
@@ -73,7 +98,11 @@
                             <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
                         </svg>
                         <div class="slide__text">
-                            <h2 class="slide__text-heading"><span class="title-fcefyn">fcefyn</span></h2>
+                            <h2 class="slide__text-heading"><span class="title-fcefyn"
+                                    style="font-size:70px; display: block; color: #fff;">fcefyn</span>
+                                <span class="title-regular"
+                                    style="font-size:35px; color: #fff; text-decoration-line: overline; margin-top: -15px;">UNSJ</span>
+                            </h2>
                             <p class="slide__text-desc">Uno de los aportes científicos tecnológicos que pone la
                                 Universidad Nacional de San Juan a disposición de la Secretaría de Estado de Ciencia,
                                 Tecnología e Innovación de la Provincia en medio de la emergencia sanitaria actual, es
@@ -91,8 +120,10 @@
                             <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
                         </svg>
                         <div class="slide__text">
-                            <h2 class="slide__text-heading"><span class="title-regular">Facultad De Ciencias
-                                    Sociales</span></h2>
+                            <h2 class="slide__text-heading"><span class="title-regular" style="color: #fff;">E<span
+                                        style="font-size:75px;">U</span>C<span style="color: #b3101c;">S</span></span>
+                                <p style="font-size: 14px;">ESCUELA UNIVERSITARIA<br>DE CIENCIAS DE LA SALUD</p>
+                            </h2>
                             <p class="slide__text-desc">Departamento de Comunicacion de la Facultad de Ciencias Sociales
                                 de la UNSJ</p>
                             <a href="http://hkmbhutto.wix.com/abdulrasheed" class="slide__text-link">Mas información
@@ -120,148 +151,104 @@
         </div>
     </section>
     <!--End Slider-->
-    <!--Instituciones-->
-    <section id="instituciones">
-        <h1><span class="title-regular">Instituciones</span></h1>
-        <div class="container">
-            <div class="box">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-                            <div class="box-part text-center">
-                                <div class="title" style="font-size: 60px;">
-                                    <span class="title-regular">E<span style="font-size:75px;">U</span>C<span style="color: #b3101c;">S</span></span>
-                                    <p style="font-size: 14px;">ESCUELA UNIVERSITARIA<br>DE CIENCIAS DE LA SALUD</p>
-                                </div>
-
-                                <div class="text">
-                                    <span></span>
-                                </div>
-
-                                <a href="#"></a>
-
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-                            <div class="box-part text-center">
-                                <div class="title">
-                                   <span class="title-fcefyn" style="font-size:70px; display: block; color: #ed8500;" >fcefyn</span>
-                                   <span class="title-regular"  style="font-size:35px; color: #ed8500; text-decoration-line: overline; margin-top: -15px;">UNSJ</span>
-                                </div>
-
-                                <div class="text">
-                                </div>
-
-                                <a href="#"></a>
-
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-                            <div class="box-part text-center faud">
-                                <div class="title">
-                                    <img src="img/faudlogo.png" height="70px " style="display: inline;" alt="">
-                                    <span style="font-size:35px;"> FAUD</span>
-                                </div>
-
-                                <div class="text">
-                                </div>
-
-                                <a href="#"></a>
-
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-                            <div class="box-part text-center">
-
-                                <i class="fa fa-pinterest-p fa-3x" aria-hidden="true"></i>
-
-                                <div class="title">
-                                    <h4>Pinterest</h4>
-                                </div>
-
-                                <div class="text">
-                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed.
-                                        Elitr
-                                        scripta ocurreret qui ad.</span>
-                                </div>
-
-                                <a href="#">Learn More</a>
-
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-                            <div class="box-part text-center">
-
-                                <i class="fa fa-google-plus fa-3x" aria-hidden="true"></i>
-
-                                <div class="title">
-                                    <h4>Google</h4>
-                                </div>
-
-                                <div class="text">
-                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed.
-                                        Elitr
-                                        scripta ocurreret qui ad.</span>
-                                </div>
-
-                                <a href="#">Learn More</a>
-
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-                            <div class="box-part text-center">
-
-                                <i class="fa fa-github fa-3x" aria-hidden="true"></i>
-
-                                <div class="title">
-                                    <h4>Github</h4>
-                                </div>
-
-                                <div class="text">
-                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed.
-                                        Elitr
-                                        scripta ocurreret qui ad.</span>
-                                </div>
-
-                                <a href="#">Learn More</a>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+    <section id="login">
+        <div class="content">
+            <svg class="overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+            </svg>
+            <div class="text" style="opacity: 1;bottom: -25%;">
+                <h2 class="slide__text-heading"><span class="title-regular" style="color: #fff;">
+                        <span class="title-regular">Campus</span><span class="title-bold">Virtual</span> | <span
+                            class="title-regular">UNSJ</span>
+                </h2>
+                <p class="slide__text-desc">Ingreso al Sistema de educacion a Distancia de la UNSJ </p>
+                <a href="http://hkmbhutto.wix.com/abdulrasheed" class="slide__text-link">Iniciar Sesion</a>
             </div>
         </div>
     </section>
-    <!--En Instituciones-->
-    <script src="js/jquery-3.5.0.min.js"></script>
+    <section id="signin">
+        <div class="content">
+            <div class="text-bottom" style="opacity: 1;">
+                <h2 class="slide__text-heading" style="margin-left: -2px;"><span class="title-regular" style="color: #fff;">
+                        <span class="title-regular">Todavia no sos usuario del Campus? </span>
+                </h2>
+                <a href="http://hkmbhutto.wix.com/abdulrasheed" class="slide__text-link" style="/*! margin-left: auto; *//*! margin-right: auto; */text-align: center;/*! width: 93%; */position: relative;width: 85%;margin-left: 8%; z-index: 0;">Tramita el registro acá</a>
+            </div>
+        </div>
+    </section>
+    <section id="noticias">
+        <h1 style="color: #fff;text-align: right;padding-bottom: 10px ;font-size: 49px;margin-right: 19px;margin-top: -116px;">Noticias</h1>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/nav.js"></script>
-    Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a
+<div class="container">
+    <div class="row">
+<div style="/*! margin-top: 8px; */padding-left: 0px;padding-right: 0px;" class="card col-md-4">
+                <div class="card-header" style="padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;">
+                    <div class="card-header-mask">
+                        <div class="card-header-date">
+                            <div class="card-header-date-day">12</div>
+                            <div class="card-header-date-month">May</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-body-header" style="padding-bottom: 0px;">
+                        <div class="card-body-header-category">Photos</div>
+                        <h1>True Paradise on Earth: Unknown Place</h1>
+                        <p class="card-body-header-sentence">
+                            They call it <span>"</span>God's Own Country.<span>"</span>
+                        </p>
+                    </div>
+                    <p class="card-body-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Molestias autem aliquid, recusandae maiores iste fuga,
+                        explicabo dolor vitae magnam!
+                    </p>
+                    <div class="card-body-footer">
+                        <i class="icon icon-time"></i> 6min. read
+                        <i class="icon icon-comment"></i> 39 comments
+                    </div>
+                </div>
+            </div><div class="card" style="margin-bottom: 0px;">
+                <div class="card-header" style="padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;">
+                    <div class="card-header-mask">
+                        <div class="card-header-date">
+                            <div class="card-header-date-day">12</div>
+                            <div class="card-header-date-month">May</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-body-header" style="padding-bottom: 0px;">
+                        <div class="card-body-header-category">Photos</div>
+                        <h1>True Paradise on Earth: Unknown Place</h1>
+                        <p class="card-body-header-sentence">
+                            They call it <span>"</span>God's Own Country.<span>"</span>
+                        </p>
+                    </div>
+                    <p class="card-body-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Molestias autem aliquid, recusandae maiores iste fuga,
+                        explicabo dolor vitae magnam!
+                    </p>
+                    <div class="card-body-footer">
+                        <i class="icon icon-time"></i> 6min. read
+                        <i class="icon icon-comment"></i> 39 comments
+                    </div>
+                </div>
+            </div>
+</div>
+</div>
+    </section>
+    <!--<footer id="footer">
+        <img src="img/21-02-2019_12-02-04_Manual-Identidad-UNSJ-copia(2).svg" alt="">
+    </footer>-->
+
+    <!--Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a
         href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
     Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a
         href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
     Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a
-        href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+        href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>-->
 </body>
 
 </html>

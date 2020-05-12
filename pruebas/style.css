@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #212753;
+}
+
+.diamond-grid{
+    width: 70%;
+    margin: 150px auto 0;
+}
+
+.item{
+    width: 220px;
+    height: 220px;
+    background-color: #fff;
+}
+
+.logo path{
+    fill:#fff;
+}
+
+/*
+background: repeating-linear-gradient( 0deg, rgba(0, 0, 0, 0) 45px, rgba(0, 0, 0, 0) 55px, #82D5DD 40px, #82D5DD 60px );
+*/
