@@ -75,6 +75,11 @@ h6 {
     z-index   : 4;
 }
 
+.blur{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
 /*navbar*/
 nav {
     margin          : 0PX;
@@ -229,7 +234,11 @@ nav {
 
 
 /*MEDIAS*/
-
+@media (min-width: 576px) {
+    .hamburger{
+        display: none
+    }
+}
 @media (max-width: 768px) {
     .colapsed {
         display: none;
@@ -394,12 +403,8 @@ nav {
     .text-bottom {
         margin-top: 14%;
     }
-}
 
-#noticias{
-    /*! height: 17vh; */
-}
-
+    
 .hamburger-inner,
 .hamburger-inner:after,
 .hamburger-inner:before {
@@ -412,3 +417,9 @@ nav {
     border-radius             : 0px;
     background-color          : #000;
 }
+}
+
+#noticias{
+    /*! height: 17vh; */
+}
+

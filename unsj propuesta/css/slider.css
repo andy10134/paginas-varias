@@ -158,7 +158,7 @@ svg {
 }
 .slide:nth-child(2) .slide__bg {
   left: -50%;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a1/F_EXACTAS_UNSJ.JPG");
+  background-image: url("../img/F_EXACTAS_UNSJ.JPG");
 }
 .slide:nth-child(2) .slide__overlay-path {
   fill: #e68100;
